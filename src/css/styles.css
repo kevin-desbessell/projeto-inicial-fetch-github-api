@@ -200,3 +200,12 @@ main {
   align-items: start;
   margin-top: 8px;
 }
+
+.events {
+  background-color: lightgray;
+}
+
+.events h1 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
