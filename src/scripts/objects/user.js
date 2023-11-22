@@ -5,6 +5,9 @@ const user = {
     userName: '',
     followers: '',
     following: '',
+    forks: '',
+    watchers: '',
+    language: '',
     repositories: [],
     events: [],
     setInfo(gitHubUser) {
@@ -20,6 +23,12 @@ const user = {
     },
     setEvents(events) {
         this.events = events
+    },
+    setInfosRepositories(infoRepositories) {
+        this.forks = infoRepositories.forks
+        this.stars = infoRepositories.stargazers_count
+        this.watchers = infoRepositories.watchers
+        this.language = infoRepositories.language
     },
 }
 
